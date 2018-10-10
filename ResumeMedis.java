@@ -70,7 +70,7 @@ public class ResumeMedis {
         dataResume.addHeader("X-Signature", generateHmacSHA256Signature);
         dataResume.addHeader("Content-Type", "application/json");
 
-        try {
+        try { /* Susun format json mengikuti juknis */
             String tempParams = "{\n"
                     + "    \"nik\": \"" + strNIK + "\",\n"
                     + "    \"tgl_awal_masuk\": \"" + strTglAwal + "\",\n"
