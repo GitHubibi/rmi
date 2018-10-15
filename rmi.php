@@ -1,9 +1,9 @@
 <?php
-$XCONSID = "3404015"; // Kode RS dari kemenkes
-$SECRETKEY = "12345"; // Password SIRS Online
+$XCONSID = "1234567"; // Kode RS dari kemenkes
+$SECRETKEY = "09876"; // Password SIRS Online
 $STRURL = "http://103.74.143.35/apps/sisrute/index_ci.php/services/resume/load_resume"; // URL Development
 
-$strNIK = "3305195009610003"; // isi dengan nik pasien yang sudah ada di data resume medis
+$strNIK = "3000000000000001"; // isi dengan nik pasien yang sudah ada di data resume medis
 $strTglAwal = "2018-01-01";  // tanggal awal data yang ingin diambil
 $strTglAkhir = "2018-09-14"; // tanggal akhir data yang ingin diambil
 
