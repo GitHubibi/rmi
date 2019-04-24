@@ -34,7 +34,7 @@ public class ResumeMedis {
      */
     private static final String XCONSID = "1234567"; // Kode RS dari kemenkes
     private static final String SECRETKEY = "09876"; // Password SIRS Online
-    private static final String STRURL = "http://dvlp.sisrute.kemkes.go.id/index_ci.php/services/resume/load_resume"; // URL Development
+    private static final String STRURL = "http://103.74.143.35/apps/sisrute/index_ci.php/services/load_resume"; // URL Development
 
     private static String generateHmacSHA256Signature(String data, String key) {
         byte[] hmacData;
