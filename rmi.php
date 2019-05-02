@@ -2,6 +2,7 @@
 $XCONSID = "1234567"; // Kode RS dari kemenkes
 $SECRETKEY = "09876"; // Password SIRS Online
 $STRURL = "http://dvlp.sisrute.kemkes.go.id/index_ci.php/services/resume/load_resume"; // URL Development
+// $STRURL = "https://sisrute.kemkes.go.id/baru/index_ci.php/services/resume/load_resume"; // URL Live
 
 $strNIK = "3000000000000001"; // isi dengan nik pasien yang sudah ada di data resume medis
 $strTglAwal = "2018-01-01";  // tanggal awal data yang ingin diambil
@@ -26,6 +27,11 @@ curl_setopt($process, CURLOPT_HTTPHEADER, array("Content-Type: application/json"
     "X-Signature: $generateHmacSHA256Signature"));
 curl_setopt($process, CURLOPT_POST, true);
 curl_setopt($process, CURLOPT_RETURNTRANSFER, TRUE);
+/*
+untuk https pakai ini,
+curl_setopt($process, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($process, CURLOPT_SSL_VERIFYHOST, false);
+*/
 $result = curl_exec($process);
 curl_close($process);
 echo $result;
